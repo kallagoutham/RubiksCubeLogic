@@ -1,0 +1,55 @@
+1) step is too choose the first color to be solved and now make plus with matching centers 
+	adjacent pieces with same color to it.
+
+----------------------------------------------------------------------------------------------
+
+2) Now for soloving first color follow these algorithms inorder to make your work easier. 
+	
+		for all you have to place the piece in place where all centres match with the piece 
+		containing colors so as to see a T after solving.
+
+
+				up- 		U R U` R`   - 3time(s)
+				down - 	U R U` R` 	- 2time(s)
+				up-right-R U R` U`	- 1time(s)
+
+		After this you have to see all T with respective centers.
+
+----------------------------------------------------------------------------------------------
+
+3) Now our job is to getting second layer to get solved now adjust the center and solve colors
+	by using this formula
+		
+			 	R U R U R U` R` U` R`
+
+----------------------------------------------------------------------------------------------
+
+4) Now we have to see the + on the top face if you are not able to see + now we have to use
+	following formula to get + on the top face 
+
+				F R U R` U` F`
+
+----------------------------------------------------------------------------------------------
+
+5) After this step you will find + on the top face now our job is to solve the top face color.
+	for solving that following algorithm must be used, here one thing to note is that we should
+	not change the orientation of the cube instead all corners must be brought to the corner we
+	used to solve the first corner of the first corner of the top most color.
+
+				facing right - R D R` D` 
+				facing front - D R D` R`
+
+----------------------------------------------------------------------------------------------
+
+6) Here if we find a color solved in a manner only top layer middlemost piece is kept solved 
+	or unsolved place this facing left by matching and use this formula to get all in such 
+	fashion.
+
+				R U R` U` R` F R R U` R` U` R U R` F`
+
+----------------------------------------------------------------------------------------------
+
+7) Now we will see one color solved or all like above now use this formula either 1 or 2 times
+	according to need by facing the solved side facing front.
+
+				R U` R U R U R U` R` U` R R 
